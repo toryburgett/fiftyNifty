@@ -1,0 +1,23 @@
+{
+  "name": "toryburgett",
+  "version": "1.0.0",
+  "description": "Tory Burgett Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tory Burgett",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.14.1",
+    "d3": "^3.5.10",
+    "express": "^4.13.3",
+    "hbs": "^4.0.0",
+    "jsdom": "^7.2.1",
+    "materialize-css": "^0.97.3",
+    "mongoose": "^4.3.1",
+    "request": "^2.67.0",
+    "topojson": "1"
+  }
+}

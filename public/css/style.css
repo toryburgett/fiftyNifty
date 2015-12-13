@@ -1,0 +1,28 @@
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+    padding-top: 10px;
+  }
+
+  .nav-wrapper {
+    margin: 5px;
+  }
+
+  .americaItalic{
+    font-size: 75%;
+  }
+
+  .chart div {
+  	font: 10px sans-serif;
+  	background-color: steelblue;
+  	text-align: right;
+  	padding: 3px;
+  	margin: 1px;
+  	color: white;
+  }
