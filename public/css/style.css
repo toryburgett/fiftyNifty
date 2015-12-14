@@ -33,3 +33,7 @@
     stroke-linejoin: round;
     stroke-linecap: round;
   }
+
+  .mapAmerica{
+    margin: 0 auto;
+  }
