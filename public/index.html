@@ -38,48 +38,68 @@
   <main>
     <div class="container">
       <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center red-text">Land<em class="thin em americaItalic"> of the </em>Free,</h1>
-      <!-- <h3 class="header center red-text thin"><em> - and the - </em></h3> -->
-      <h1 class="header center red-text">Home<em class="thin em americaItalic"> of the </em>Brave</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">Oh say does that star spangle, banner yet wave</h5>
+        <div class="container">
+          <br><br>
+          <h1 class="header center red-text">Land<em class="thin em americaItalic"> of the </em>Free,</h1>
+          <!-- <h3 class="header center red-text thin"><em> - and the - </em></h3> -->
+          <h1 class="header center red-text">Home<em class="thin em americaItalic"> of the </em>Brave</h1>
+          <div class="row center">
+            <h5 class="header col s12 light">Oh say does that star spangle, banner yet wave</h5>
+          </div>
+          <div class="row center">
+            <a href="#" id="download-button" class="btn-large waves-effect waves-light red">Get Started</a>
+          </div>
+          <br><br>
+
+
+
+          <!-- Jesse Example -->
+          <div class="chart">
+            <div style="width: 40px;">4</div>
+            <div style="width: 80px;">8</div>
+            <div style="width: 150px;">15</div>
+            <div style="width: 160px;">16</div>
+            <div style="width: 230px;">23</div>
+            <div style="width: 420px;">42</div>
+          </div>
+          <script>d3.geo.albersUsa();</script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
+          <br><br>
+
+
+
+
+          <!-- Bubble Map Example -->
+          <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+          <script src="//d3js.org/topojson.v1.min.js"></script>
+          <script>
+
+          var width = 960,
+          height = 600;
+
+          var path = d3.geo.path()
+          .projection(null);
+
+          var svg = d3.select("body").append("svg")
+          .attr("width", width)
+          .attr("height", height);
+
+          d3.json("../build/counties.json", function(error, us) {
+            if (error) return console.error(error);
+
+            svg.append("path")
+            .datum(topojson.mesh(us))
+            .attr("d", path);
+          });
+
+          </script>
+
+
+
+
+
+        </div>
       </div>
-      <div class="row center">
-        <a href="#" id="download-button" class="btn-large waves-effect waves-light red">Get Started</a>
-      </div>
-      <br><br>
-
-
-
-      <!-- Jesse Example -->
-      <div class="chart">
-        <div style="width: 40px;">4</div>
-        <div style="width: 80px;">8</div>
-        <div style="width: 150px;">15</div>
-        <div style="width: 160px;">16</div>
-        <div style="width: 230px;">23</div>
-        <div style="width: 420px;">42</div>
-      </div>
-      <script>d3.geo.albersUsa();</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
-      <br><br>
-
-
-<script>
-      var projection = d3.geo.albers()
-          .center([0, 55.4])
-          .rotate([4.4, 0])
-          .parallels([50, 60])
-          .scale(6000)
-          .translate([width / 2, height / 2]);
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
-
-
-    </div>
-  </div>
       <div class="row red">
         <div class="col l6 s12">
           <h5 class="white-text">Amber Waves of Grain</h5>
